@@ -6,20 +6,20 @@ class App extends React.Component {
     super(props)
     this.state = {
       currentUid: null,
-      isLoaded: null
+      isLoaded: null,
+      database: null,
+      dbError: false
     }
-
-    this.handleUpdateCurrentUser = this.handleUpdateCurrentUser.bind(this)
   }
   componentDidMount() {
     this.firebase = global.firebase
     this.firebaseui = global.firebaseui
 
     const ui = new this.firebaseui.auth.AuthUI(this.firebase.auth());
+    const db = this.firebase.database()
 
     const uiConfig = {
       signInOptions: [
-        // List of OAuth providers supported.
         this.firebase.auth.GoogleAuthProvider.PROVIDER_ID
       ],
       'signInFlow': 'popup'
@@ -31,15 +31,26 @@ class App extends React.Component {
 
     this.firebase.auth().onAuthStateChanged((user) => {
       if (user && user.uid !== currentUid) {
-       console.log(user)
        this.handleUpdateCurrentUser(this.createUser(user))
+       this.getDataFromFbRealtimeDB(db, user.uid)
        this.setIsLoaded(true)
       } else {  
        currentUid = null;
        this.handleUpdateCurrentUser()
-       console.log("no user signed in");  
+       console.log("no user signed in");
       }  
      });  
+  }
+
+  getDataFromFbRealtimeDB(db, uid) {
+    console.log(uid)
+    return db.ref(`/data/`).once('value')
+      .then((snapshot) => {
+        console.log(snapshot.val())
+        this.setState({
+          database: snapshot.val()
+        })
+    })
   }
 
   setIsLoaded(isLoaded = false) {
@@ -60,17 +71,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { currentUid, isLoaded } = this.state
+    const { currentUid, isLoaded, database } = this.state
     return (
       <div className="App">
         <header className="app-header">
           Header
         </header>
-        { (!isLoaded || !currentUid) && (
-          <div>
-            <span>Authenticating...</span>
-          </div>
-        ) }
         { (!currentUid && !isLoaded) && (
           <div id="firebaseui-auth-container"></div>
         ) }
@@ -79,6 +85,14 @@ class App extends React.Component {
             logged in
           </div>
         ) }
+
+        { database && (
+          <div>
+            <span>database is loaded</span>
+          </div>
+        )
+          
+        }
       </div>
     );
   }
