@@ -11,13 +11,17 @@ class App extends React.Component {
       dbError: false
     }
   }
+
   componentDidMount() {
     this.firebase = global.firebase
     this.firebaseui = global.firebaseui
+    this.ui = new this.firebaseui.auth.AuthUI(this.firebase.auth());
 
-    const ui = new this.firebaseui.auth.AuthUI(this.firebase.auth());
-    const db = this.firebase.database()
+    this.initialiseSignIn()
+    this.handleAuthStateChange()
+  }
 
+  initialiseSignIn() {
     const uiConfig = {
       signInOptions: [
         this.firebase.auth.GoogleAuthProvider.PROVIDER_ID
@@ -25,24 +29,26 @@ class App extends React.Component {
       'signInFlow': 'popup'
     }
 
-    ui.start('#firebaseui-auth-container', uiConfig);
+    this.ui.start('#firebaseui-auth-container', uiConfig);
+  }
 
+  handleAuthStateChange() {
     let { currentUid } = this.state
-
     this.firebase.auth().onAuthStateChanged((user) => {
       if (user && user.uid !== currentUid) {
        this.handleUpdateCurrentUser(this.createUser(user))
-       this.getDataFromFbRealtimeDB(db, user.uid)
+       this.getDataFromFbRealtimeDB(user.uid)
        this.setIsLoaded(true)
       } else {  
        currentUid = null;
        this.handleUpdateCurrentUser()
        console.log("no user signed in");
       }  
-     });  
+     });
   }
 
-  getDataFromFbRealtimeDB(db, uid) {
+  getDataFromFbRealtimeDB(uid) {
+    const db = this.firebase.database()
     console.log(uid)
     return db.ref(`/data/`).once('value')
       .then((snapshot) => {
@@ -70,14 +76,28 @@ class App extends React.Component {
     this.setState({ currentUid })
   }
 
+  handleLogoutUser() {
+    this.firebase.auth().signOut().then(() => {
+      this.setState({
+        currentUid: null,
+        database: null,
+        isLoaded: null
+      })
+      this.initialiseSignIn()
+    }).catch(function(error) {
+      console.error('Error when logging out user')
+      console.error(error)
+    });
+  }
+
   render() {
     const { currentUid, isLoaded, database } = this.state
     return (
       <div className="App">
         <header className="app-header">
-          Header
+          { currentUid && <input type="button" onClick={() => this.handleLogoutUser()} value="Logout"></input> }
         </header>
-        { (!currentUid && !isLoaded) && (
+        { !currentUid && (
           <div id="firebaseui-auth-container"></div>
         ) }
         { (currentUid && isLoaded) && (
