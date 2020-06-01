@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import FormThingie from './components/FormThingie'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -100,19 +102,12 @@ class App extends React.Component {
         { !currentUid && (
           <div id="firebaseui-auth-container"></div>
         ) }
-        { (currentUid && isLoaded) && (
-          <div>
-            logged in
-          </div>
-        ) }
-
         { database && (
           <div>
             <span>database is loaded</span>
+            <FormThingie database={this.state.database} ></FormThingie>
           </div>
-        )
-          
-        }
+        ) }
       </div>
     );
   }
