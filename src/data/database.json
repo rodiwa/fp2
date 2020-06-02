@@ -1,0 +1,530 @@
+{
+  "version": "1.0.0",
+  "sections": [
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Front End & JavaScript Developer"
+        },
+        {
+          "type": "text",
+          "value": "I'm a Javascript developer from Mumbai. I specialise in excellent UI/UX solutions that help clients translate their ideas into product-ready apps."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Major Skillset"
+        },
+        {
+          "type": "text",
+          "value": "React. Redux. Vue. VueX. Jest. AngularJS. PWA. Web Storage. Service Workers. Promise. Fetch. Async Await."
+        },
+        {
+          "type": "title",
+          "value": "On The Sides"
+        },
+        {
+          "type": "text",
+          "value": "React Native. Expo. Material UI. Firebase Database, Hosting. NodeJS. Google Cloud Computing. Docker. Kubernetes. Python."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Tech At A Glance"
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "wordcloud",
+            "widgetButton": {
+              "show": false
+            },
+            "widgetData": [
+              { "title": "Docker", "size": "3" },
+              { "title": "Github", "size": "1" },
+              { "title": "Google Cloud Functions", "size": "2" },
+              { "title": "Heroku", "size": "3" },
+              { "title": "VueX", "size": "4" },
+              { "title": "Travis CI/CD", "size": "2" },
+              { "title": "Vue", "size": "4" },
+              { "title": "VS Code", "size": "1" },
+              { "title": "GCP", "size": "2" },
+              { "title": "React", "size": "5" },
+              { "title": "React Native ", "size": "3" },
+              { "title": "IndexedDB", "size": "2" },
+              { "title": "FB RealtimeDB", "size": "2" },
+              { "title": "Service Workers", "size": "4" },
+              { "title": "Jest Enzyme", "size": "1" },
+              { "title": "Jenkins CI/CD", "size": "3" },
+              { "title": "Kubernetes", "size": "2" },
+              { "title": "FB Hosting", "size": "2" },
+              { "title": "Heroku", "size": "3" },
+              { "title": "NodeJS", "size": "4" },
+              { "title": "Material UI", "size": "4" },
+              { "title": "Web Storage", "size": "3" },
+              { "title": "PWA", "size": "2" },
+              { "title": "Redux", "size": "5" },
+              { "title": "Expo", "size": "2" }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "timeline",
+            "widgetMeta": {
+              "title": "Timeline",
+              "showMoreButtonTitle": "Show Timeline"
+            },
+            "widgetData": [
+              {
+                "meta": {
+                  "year": "Current/ Future",
+                  "group": true,
+                  "future": true
+                },
+                "items": [
+                  {
+                    "text": "Docker Kubernetes"
+                  },
+                  {
+                    "text": "DevOps Basics"
+                  },
+                  {
+                    "text": "Linux Shell Programming"
+                  },
+                  {
+                    "text": "Python 3"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2020",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "TypeScript"
+                  },
+                  {
+                    "text": "AWS Basics"
+                  },
+                  {
+                    "text": "Google Cloud Platform Basics"
+                  },
+                  {
+                    "text": "Kotlin"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2019",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Jenkins CI/CD"
+                  },
+                  {
+                    "text": "Kotlin"
+                  },
+                  {
+                    "text": "TravisCI"
+                  },
+                  {
+                    "text": "CircleCI"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2018",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Data Structures & Algorithms"
+                  },
+                  {
+                    "text": "Advanced Javascript Concepts/ Functional"
+                  },
+                  {
+                    "text": "Google Firebase Hosting/ RelatimeDB"
+                  },
+                  {
+                    "text": "Heroku"
+                  },
+                  {
+                    "text": "React Native"
+                  },
+                  {
+                    "text": "IndexedDB"
+                  },
+                  {
+                    "text": "Service Workers"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2017",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Material UI"
+                  },
+                  {
+                    "text": "VueJS-VueX"
+                  },
+                  {
+                    "text": "VS Code Extensions"
+                  },
+                  {
+                    "text": "Google Chrome Extensions"
+                  },
+                  {
+                    "text": "Expo"
+                  },
+                  {
+                    "text": "D3JS"
+                  },
+                  {
+                    "text": "Google Charts"
+                  },
+                  {
+                    "text": "SVG"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2016",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "React-Redux"
+                  },
+                  {
+                    "text": "ES6"
+                  },
+                  {
+                    "text": "NodeJS"
+                  },
+                  {
+                    "text": "Promises"
+                  },
+                  {
+                    "text": "Webpack-Babel"
+                  },
+                  {
+                    "text": "Jest"
+                  },
+                  {
+                    "text": "Enzyme"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2015",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "DurandalJS"
+                  },
+                  {
+                    "text": "KnockoutJS"
+                  },
+                  {
+                    "text": "Gulp"
+                  },
+                  {
+                    "text": "Webpack"
+                  },
+                  {
+                    "text": "SCSS"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2014",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "BackboneJS"
+                  },
+                  {
+                    "text": "AngularJS"
+                  },
+                  {
+                    "text": "Bootstrap 3"
+                  },
+                  {
+                    "text": "Python 2"
+                  },
+                  {
+                    "text": "MySQL"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2013",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Balsamiq"
+                  },
+                  {
+                    "text": "Photoshop"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2012",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Basic JavaScript"
+                  },
+                  {
+                    "text": "HTML/5"
+                  },
+                  {
+                    "text": "CSS/3"
+                  },
+                  {
+                    "text": "jQuery"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "About Me"
+        },
+        {
+          "type": "text",
+          "value": "I have spent a major part of my career behind the UI of some amazing products across various verticals. A part of me is always learning something new that keeps me motivated to adopt latest trends and paradigms of software development."
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "cards",
+            "widgetData": [
+              {
+                "img": "",
+                "title": "Simple. Clean. Readable code",
+                "text": "One of the most difficul parts of coding is to keep things simple"
+              },
+              {
+                "img": "",
+                "title": "Best Practices & Rapid Development",
+                "text": "Keeping up the pace with productivity tools, useful extensions and best practices"
+              },
+              {
+                "img": "",
+                "title": "Love Of Learning",
+                "text": "From web dev to servers & API, from containers & CI/CD to Kotlin & PWAs"
+              },
+              {
+                "img": "",
+                "title": "Embracing Modern Paradigms",
+                "text": "To find quicker (or lazier) ways to get things done - ES6, TypeScript, Microservices, Docker, Cloud"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Work & Projects"
+        },
+        {
+          "type": "text",
+          "value": "Showcase of various projects and collaborations, some done prefessionally, some personal projects."
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "showcase",
+            "widgetMeta": {
+              "max": 2,
+              "title": "Work & Projects",
+              "showMoreButtonTitle": "Show Timeline"
+            },
+            "widgetData": [
+              {
+                "title": "Consumer Connect",
+                "category": "office",
+                "client": "EllieMae",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "The loan app is to help loan officers to be able to collect and store data of potential customers who are applying for a new, or refinancing an existing loan.",
+                "shortDesc": "Created consumer facing apps to help customers with banking services",
+                "tools": "React Redux, Jest Enzyme, ES6, Promises, NodeJS",
+                "img": "../../../images/screens/elm-screen.jpg"
+              },
+              {
+                "title": "Word Cloud App",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Create word cloud and organise into lists to organise yourself better. Works offline, or even on low connectivity.",
+                "shortDesc": "Organise your thoughts to work on later.",
+                "tools": "Vue, Vuex, Firebase Cloudstore",
+                "img": "../../../images/screens/bg-word-wrap.jpg",
+                "url": "https://word-wrap.firebaseapp.com/"
+              },
+              {
+                "title": "Media Platform",
+                "category": "office",
+                "client": "Quinstreet",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "QMP, is an internal management tool that consolidates, visualizes, and manages digital marketing data from various verticals such as Insurance, Education, Health, Finance, Auto, etc.",
+                "shortDesc": "Created portal to view, analyse and manage digital marketing data",
+                "tools": "DurandalJS, KnockoutJS, Gulp, SCSS",
+                "img": "../../../images/screens/qnst-screen.jpg"
+              },
+              {
+                "title": "Online Learning Portal",
+                "category": "office",
+                "client": "CK 12",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "CK-12 Foundation provides a library of free online textbooks, videos, exercises, flashcards, and real-world applications for over 5000 concepts from arithmetic to students.",
+                "shortDesc": "Added new features & enhancements for teachers, students on an educational site",
+                "tools": "JavaScript, jQuery",
+                "img": "../../../images/screens/ck12-screen.jpg"
+              },
+              {
+                "title": "NT Web App",
+                "category": "office",
+                "client": "NoodleTools",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "NoodleTools is a web-based student research service that helps you correctly cite sources in MLA, APA, and Chicago/Turabian citation styles.",
+                "shortDesc": "Revamped an older site to a fresher UI with modern UI technologies",
+                "tools": "BackboneJS, UnderscoreJS, Python",
+                "img": "../../../images/screens/nt-screen.jpg"
+              },
+              {
+                "title": "NT Companion (Mobile)",
+                "category": "office",
+                "client": "NoodleTools",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "NoodleTools Companion is the mobile app version of the NoodleTools website.",
+                "shortDesc": "Designed and created mobile UI from scratch & translated web services to mobile",
+                "tools": "Android Studio, XCode, Balsamiq",
+                "img": "../../../images/screens/nt-comp-screen.jpg"
+              },
+              {
+                "title": "HealthCare",
+                "category": "office",
+                "client": "Medsolis",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Medsolis is a healthcare application that allows doctors, nurses and patients to interact with each other, share and report critical health statistics via a system.",
+                "shortDesc": "Created medical dashboard to manage patient related vital stats by doctors",
+                "tools": "D3JS, NodeJS, jQuery, Bootstrap",
+                "img": "../../../images/screens/meds-screen.jpg"
+              },
+              {
+                "title": "Remote Airplay App",
+                "category": "office",
+                "client": "Bang & Olufsen",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "B&O is a high-end Danish consumer electronics company that designs and manufactures audio products, television sets, and telephones.",
+                "shortDesc": "Created settings page to access device features, updates via Airplay",
+                "tools": "Javascript, HTML, CSS, Flashing devices with binary",
+                "img": "../../../images/screens/bno-screen.jpg"
+              },
+              {
+                "title": "SET Campaigns",
+                "category": "office",
+                "client": "Microsoft",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Microsoft promotional campaigns were involved in online advertisements and event sponsorship for major brands."    ,
+                "shortDesc": "Manage textual, media content and social media hooks for MSN network pages",
+                "tools": ".Net, XHTML, InfoPath, Microsoft Team Foundation Server",
+                "img": "../../../images/screens/msft-screen.jpg"
+              },
+              {
+                "title": "Dynamic JSON Resume",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Handy tool if you want to create a document (resume) that you need to update periodically. Simply update a single JSON file to publish your changes, w/o having to work on any code.",
+                "shortDesc": "Creates entire resume by editing single JSON file.",
+                "tools": "React, PWA, Material UI, Firebase",
+                "img": "../../../images/screens/bg-port.jpg",
+                "url": "https://rohitdiwakar.dev/"
+              },
+              {
+                "title": "Smart Geo Timer",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Starts countdown timer for you based on your location. Everyday gym? Basketball game? No need to configure timers manually for daily routines.",
+                "shortDesc": "Starts up your timer based on your geo location.",
+                "tools": "Kotlin, Androit Studio",
+                "img": "../../../images/misc/placeholder.jpg"
+              },
+              {
+                "title": "UUID Mapper (VS Code Plugin)",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Helps to make sense of value of UUID so we can make changes intelligently.",
+                "shortDesc": "Helps give 'names' to UUID fields.",
+                "tools": "VS Code Extension, JavaScript",
+                "img": "../../../images/screens/uuid-screen.png",
+                "url": "https://marketplace.visualstudio.com/items?itemName=RohitElliemae.uuid-mapper"
+              },
+              {
+                "title": "Auto Fill (Chrome Extension)",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Productivity tool that saves time for testing by autofilling user data and confiurations on form.",
+                "shortDesc": "Auto fills data to help test feature.",
+                "tools": "Chrome Extension, JavaScript",
+                "img": "../../../images/misc/placeholder.jpg"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.css';
 
+import FormThingie from './components/FormThingie'
+
+// test data only
+// import database from './data/database.json'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -49,7 +54,6 @@ class App extends React.Component {
 
   getDataFromFbRealtimeDB(uid) {
     const db = this.firebase.database()
-    console.log(uid)
     return db.ref(`/data/`).once('value')
       .then((snapshot) => {
         console.log(snapshot.val())
@@ -97,22 +101,12 @@ class App extends React.Component {
         <header className="app-header">
           { currentUid && <input type="button" onClick={() => this.handleLogoutUser()} value="Logout"></input> }
         </header>
-        { !currentUid && (
-          <div id="firebaseui-auth-container"></div>
-        ) }
-        { (currentUid && isLoaded) && (
-          <div>
-            logged in
-          </div>
-        ) }
-
+        { !currentUid && <div id="firebaseui-auth-container"></div> }
         { database && (
           <div>
-            <span>database is loaded</span>
+            <FormThingie database={this.state.database} ></FormThingie>
           </div>
-        )
-          
-        }
+        ) }
       </div>
     );
   }

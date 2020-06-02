@@ -42,3 +42,24 @@
     transform: rotate(360deg);
   }
 }
+
+.form-database .sections {
+  margin-bottom: 2em;
+  padding: 1em;
+  border-bottom: 1px dashed gray;
+}
+
+.sections .title, .sections .text, .sections .widget {
+  padding: 1em;
+}
+
+
+/* Showcase Widget */
+.showcase-data div {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-data {
+  margin: 1em 0;
+}
