@@ -79,9 +79,9 @@
           "type": "widget",
           "widget": {
             "widgetType": "timeline",
-            "widgetButton": {
-              "show": true,
-              "title": "Show Timeline"
+            "widgetMeta": {
+              "title": "Timeline",
+              "showMoreButtonTitle": "Show Timeline"
             },
             "widgetData": [
               {
@@ -334,9 +334,6 @@
           "type": "widget",
           "widget": {
             "widgetType": "cards",
-            "widgetButton": {
-              "show": false
-            },
             "widgetData": [
               {
                 "img": "",
@@ -377,7 +374,154 @@
           "type": "widget",
           "widget": {
             "widgetType": "showcase",
-            "widgetData": []
+            "widgetMeta": {
+              "max": 2,
+              "title": "Work & Projects",
+              "showMoreButtonTitle": "Show Timeline"
+            },
+            "widgetData": [
+              {
+                "title": "Consumer Connect",
+                "category": "office",
+                "client": "EllieMae",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "The loan app is to help loan officers to be able to collect and store data of potential customers who are applying for a new, or refinancing an existing loan.",
+                "shortDesc": "Created consumer facing apps to help customers with banking services",
+                "tools": "React Redux, Jest Enzyme, ES6, Promises, NodeJS",
+                "img": "../../../images/screens/elm-screen.jpg"
+              },
+              {
+                "title": "Word Cloud App",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Create word cloud and organise into lists to organise yourself better. Works offline, or even on low connectivity.",
+                "shortDesc": "Organise your thoughts to work on later.",
+                "tools": "Vue, Vuex, Firebase Cloudstore",
+                "img": "../../../images/screens/bg-word-wrap.jpg",
+                "url": "https://word-wrap.firebaseapp.com/"
+              },
+              {
+                "title": "Media Platform",
+                "category": "office",
+                "client": "Quinstreet",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "QMP, is an internal management tool that consolidates, visualizes, and manages digital marketing data from various verticals such as Insurance, Education, Health, Finance, Auto, etc.",
+                "shortDesc": "Created portal to view, analyse and manage digital marketing data",
+                "tools": "DurandalJS, KnockoutJS, Gulp, SCSS",
+                "img": "../../../images/screens/qnst-screen.jpg"
+              },
+              {
+                "title": "Online Learning Portal",
+                "category": "office",
+                "client": "CK 12",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "CK-12 Foundation provides a library of free online textbooks, videos, exercises, flashcards, and real-world applications for over 5000 concepts from arithmetic to students.",
+                "shortDesc": "Added new features & enhancements for teachers, students on an educational site",
+                "tools": "JavaScript, jQuery",
+                "img": "../../../images/screens/ck12-screen.jpg"
+              },
+              {
+                "title": "NT Web App",
+                "category": "office",
+                "client": "NoodleTools",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "NoodleTools is a web-based student research service that helps you correctly cite sources in MLA, APA, and Chicago/Turabian citation styles.",
+                "shortDesc": "Revamped an older site to a fresher UI with modern UI technologies",
+                "tools": "BackboneJS, UnderscoreJS, Python",
+                "img": "../../../images/screens/nt-screen.jpg"
+              },
+              {
+                "title": "NT Companion (Mobile)",
+                "category": "office",
+                "client": "NoodleTools",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "NoodleTools Companion is the mobile app version of the NoodleTools website.",
+                "shortDesc": "Designed and created mobile UI from scratch & translated web services to mobile",
+                "tools": "Android Studio, XCode, Balsamiq",
+                "img": "../../../images/screens/nt-comp-screen.jpg"
+              },
+              {
+                "title": "HealthCare",
+                "category": "office",
+                "client": "Medsolis",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Medsolis is a healthcare application that allows doctors, nurses and patients to interact with each other, share and report critical health statistics via a system.",
+                "shortDesc": "Created medical dashboard to manage patient related vital stats by doctors",
+                "tools": "D3JS, NodeJS, jQuery, Bootstrap",
+                "img": "../../../images/screens/meds-screen.jpg"
+              },
+              {
+                "title": "Remote Airplay App",
+                "category": "office",
+                "client": "Bang & Olufsen",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "B&O is a high-end Danish consumer electronics company that designs and manufactures audio products, television sets, and telephones.",
+                "shortDesc": "Created settings page to access device features, updates via Airplay",
+                "tools": "Javascript, HTML, CSS, Flashing devices with binary",
+                "img": "../../../images/screens/bno-screen.jpg"
+              },
+              {
+                "title": "SET Campaigns",
+                "category": "office",
+                "client": "Microsoft",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Microsoft promotional campaigns were involved in online advertisements and event sponsorship for major brands."    ,
+                "shortDesc": "Manage textual, media content and social media hooks for MSN network pages",
+                "tools": ".Net, XHTML, InfoPath, Microsoft Team Foundation Server",
+                "img": "../../../images/screens/msft-screen.jpg"
+              },
+              {
+                "title": "Dynamic JSON Resume",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Handy tool if you want to create a document (resume) that you need to update periodically. Simply update a single JSON file to publish your changes, w/o having to work on any code.",
+                "shortDesc": "Creates entire resume by editing single JSON file.",
+                "tools": "React, PWA, Material UI, Firebase",
+                "img": "../../../images/screens/bg-port.jpg",
+                "url": "https://rohitdiwakar.dev/"
+              },
+              {
+                "title": "Smart Geo Timer",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Starts countdown timer for you based on your location. Everyday gym? Basketball game? No need to configure timers manually for daily routines.",
+                "shortDesc": "Starts up your timer based on your geo location.",
+                "tools": "Kotlin, Androit Studio",
+                "img": "../../../images/misc/placeholder.jpg"
+              },
+              {
+                "title": "UUID Mapper (VS Code Plugin)",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Helps to make sense of value of UUID so we can make changes intelligently.",
+                "shortDesc": "Helps give 'names' to UUID fields.",
+                "tools": "VS Code Extension, JavaScript",
+                "img": "../../../images/screens/uuid-screen.png",
+                "url": "https://marketplace.visualstudio.com/items?itemName=RohitElliemae.uuid-mapper"
+              },
+              {
+                "title": "Auto Fill (Chrome Extension)",
+                "category": "personal",
+                "screen": "",
+                "clientLogo": "",
+                "desc": "Productivity tool that saves time for testing by autofilling user data and confiurations on form.",
+                "shortDesc": "Auto fills data to help test feature.",
+                "tools": "Chrome Extension, JavaScript",
+                "img": "../../../images/misc/placeholder.jpg"
+              }
+            ]
           }
         }
       ]

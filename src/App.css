@@ -52,3 +52,14 @@
 .sections .title, .sections .text, .sections .widget {
   padding: 1em;
 }
+
+
+/* Showcase Widget */
+.showcase-data div {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-data {
+  margin: 1em 0;
+}

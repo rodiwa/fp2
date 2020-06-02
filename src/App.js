@@ -3,9 +3,8 @@ import './App.css';
 
 import FormThingie from './components/FormThingie'
 
-// TODO: test data only
-import database from './data/database.json'
-
+// test data only
+// import database from './data/database.json'
 
 class App extends React.Component {
   constructor(props) {
@@ -13,7 +12,7 @@ class App extends React.Component {
     this.state = {
       currentUid: null,
       isLoaded: null,
-      database: database, // TODO: change this to null
+      database: null,
       dbError: false
     }
   }
@@ -23,9 +22,8 @@ class App extends React.Component {
     this.firebaseui = global.firebaseui
     this.ui = new this.firebaseui.auth.AuthUI(this.firebase.auth());
 
-    // TODO: uncomment this
-    // this.initialiseSignIn()
-    // this.handleAuthStateChange()
+    this.initialiseSignIn()
+    this.handleAuthStateChange()
   }
 
   initialiseSignIn() {
@@ -103,9 +101,7 @@ class App extends React.Component {
         <header className="app-header">
           { currentUid && <input type="button" onClick={() => this.handleLogoutUser()} value="Logout"></input> }
         </header>
-        { !currentUid && (
-          <div id="firebaseui-auth-container"></div>
-        ) }
+        { !currentUid && <div id="firebaseui-auth-container"></div> }
         { database && (
           <div>
             <FormThingie database={this.state.database} ></FormThingie>
