@@ -3,13 +3,17 @@ import './App.css';
 
 import FormThingie from './components/FormThingie'
 
+// TODO: test data only
+import database from './data/database.json'
+
+
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       currentUid: null,
       isLoaded: null,
-      database: null,
+      database: database, // TODO: change this to null
       dbError: false
     }
   }
@@ -19,8 +23,9 @@ class App extends React.Component {
     this.firebaseui = global.firebaseui
     this.ui = new this.firebaseui.auth.AuthUI(this.firebase.auth());
 
-    this.initialiseSignIn()
-    this.handleAuthStateChange()
+    // TODO: uncomment this
+    // this.initialiseSignIn()
+    // this.handleAuthStateChange()
   }
 
   initialiseSignIn() {
@@ -51,7 +56,6 @@ class App extends React.Component {
 
   getDataFromFbRealtimeDB(uid) {
     const db = this.firebase.database()
-    console.log(uid)
     return db.ref(`/data/`).once('value')
       .then((snapshot) => {
         console.log(snapshot.val())
@@ -104,7 +108,6 @@ class App extends React.Component {
         ) }
         { database && (
           <div>
-            <span>database is loaded</span>
             <FormThingie database={this.state.database} ></FormThingie>
           </div>
         ) }

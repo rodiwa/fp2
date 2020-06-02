@@ -1,0 +1,386 @@
+{
+  "version": "1.0.0",
+  "sections": [
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Front End & JavaScript Developer"
+        },
+        {
+          "type": "text",
+          "value": "I'm a Javascript developer from Mumbai. I specialise in excellent UI/UX solutions that help clients translate their ideas into product-ready apps."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Major Skillset"
+        },
+        {
+          "type": "text",
+          "value": "React. Redux. Vue. VueX. Jest. AngularJS. PWA. Web Storage. Service Workers. Promise. Fetch. Async Await."
+        },
+        {
+          "type": "title",
+          "value": "On The Sides"
+        },
+        {
+          "type": "text",
+          "value": "React Native. Expo. Material UI. Firebase Database, Hosting. NodeJS. Google Cloud Computing. Docker. Kubernetes. Python."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Tech At A Glance"
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "wordcloud",
+            "widgetButton": {
+              "show": false
+            },
+            "widgetData": [
+              { "title": "Docker", "size": "3" },
+              { "title": "Github", "size": "1" },
+              { "title": "Google Cloud Functions", "size": "2" },
+              { "title": "Heroku", "size": "3" },
+              { "title": "VueX", "size": "4" },
+              { "title": "Travis CI/CD", "size": "2" },
+              { "title": "Vue", "size": "4" },
+              { "title": "VS Code", "size": "1" },
+              { "title": "GCP", "size": "2" },
+              { "title": "React", "size": "5" },
+              { "title": "React Native ", "size": "3" },
+              { "title": "IndexedDB", "size": "2" },
+              { "title": "FB RealtimeDB", "size": "2" },
+              { "title": "Service Workers", "size": "4" },
+              { "title": "Jest Enzyme", "size": "1" },
+              { "title": "Jenkins CI/CD", "size": "3" },
+              { "title": "Kubernetes", "size": "2" },
+              { "title": "FB Hosting", "size": "2" },
+              { "title": "Heroku", "size": "3" },
+              { "title": "NodeJS", "size": "4" },
+              { "title": "Material UI", "size": "4" },
+              { "title": "Web Storage", "size": "3" },
+              { "title": "PWA", "size": "2" },
+              { "title": "Redux", "size": "5" },
+              { "title": "Expo", "size": "2" }
+            ]
+          }
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "timeline",
+            "widgetButton": {
+              "show": true,
+              "title": "Show Timeline"
+            },
+            "widgetData": [
+              {
+                "meta": {
+                  "year": "Current/ Future",
+                  "group": true,
+                  "future": true
+                },
+                "items": [
+                  {
+                    "text": "Docker Kubernetes"
+                  },
+                  {
+                    "text": "DevOps Basics"
+                  },
+                  {
+                    "text": "Linux Shell Programming"
+                  },
+                  {
+                    "text": "Python 3"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2020",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "TypeScript"
+                  },
+                  {
+                    "text": "AWS Basics"
+                  },
+                  {
+                    "text": "Google Cloud Platform Basics"
+                  },
+                  {
+                    "text": "Kotlin"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2019",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Jenkins CI/CD"
+                  },
+                  {
+                    "text": "Kotlin"
+                  },
+                  {
+                    "text": "TravisCI"
+                  },
+                  {
+                    "text": "CircleCI"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2018",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Data Structures & Algorithms"
+                  },
+                  {
+                    "text": "Advanced Javascript Concepts/ Functional"
+                  },
+                  {
+                    "text": "Google Firebase Hosting/ RelatimeDB"
+                  },
+                  {
+                    "text": "Heroku"
+                  },
+                  {
+                    "text": "React Native"
+                  },
+                  {
+                    "text": "IndexedDB"
+                  },
+                  {
+                    "text": "Service Workers"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2017",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Material UI"
+                  },
+                  {
+                    "text": "VueJS-VueX"
+                  },
+                  {
+                    "text": "VS Code Extensions"
+                  },
+                  {
+                    "text": "Google Chrome Extensions"
+                  },
+                  {
+                    "text": "Expo"
+                  },
+                  {
+                    "text": "D3JS"
+                  },
+                  {
+                    "text": "Google Charts"
+                  },
+                  {
+                    "text": "SVG"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2016",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "React-Redux"
+                  },
+                  {
+                    "text": "ES6"
+                  },
+                  {
+                    "text": "NodeJS"
+                  },
+                  {
+                    "text": "Promises"
+                  },
+                  {
+                    "text": "Webpack-Babel"
+                  },
+                  {
+                    "text": "Jest"
+                  },
+                  {
+                    "text": "Enzyme"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2015",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "DurandalJS"
+                  },
+                  {
+                    "text": "KnockoutJS"
+                  },
+                  {
+                    "text": "Gulp"
+                  },
+                  {
+                    "text": "Webpack"
+                  },
+                  {
+                    "text": "SCSS"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2014",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "BackboneJS"
+                  },
+                  {
+                    "text": "AngularJS"
+                  },
+                  {
+                    "text": "Bootstrap 3"
+                  },
+                  {
+                    "text": "Python 2"
+                  },
+                  {
+                    "text": "MySQL"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2013",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Balsamiq"
+                  },
+                  {
+                    "text": "Photoshop"
+                  }
+                ]
+              },
+              {
+                "meta": {
+                  "year": "2012",
+                  "group": true
+                },
+                "items": [
+                  {
+                    "text": "Basic JavaScript"
+                  },
+                  {
+                    "text": "HTML/5"
+                  },
+                  {
+                    "text": "CSS/3"
+                  },
+                  {
+                    "text": "jQuery"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "About Me"
+        },
+        {
+          "type": "text",
+          "value": "I have spent a major part of my career behind the UI of some amazing products across various verticals. A part of me is always learning something new that keeps me motivated to adopt latest trends and paradigms of software development."
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "cards",
+            "widgetButton": {
+              "show": false
+            },
+            "widgetData": [
+              {
+                "img": "",
+                "title": "Simple. Clean. Readable code",
+                "text": "One of the most difficul parts of coding is to keep things simple"
+              },
+              {
+                "img": "",
+                "title": "Best Practices & Rapid Development",
+                "text": "Keeping up the pace with productivity tools, useful extensions and best practices"
+              },
+              {
+                "img": "",
+                "title": "Love Of Learning",
+                "text": "From web dev to servers & API, from containers & CI/CD to Kotlin & PWAs"
+              },
+              {
+                "img": "",
+                "title": "Embracing Modern Paradigms",
+                "text": "To find quicker (or lazier) ways to get things done - ES6, TypeScript, Microservices, Docker, Cloud"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "type": "title",
+          "value": "Work & Projects"
+        },
+        {
+          "type": "text",
+          "value": "Showcase of various projects and collaborations, some done prefessionally, some personal projects."
+        },
+        {
+          "type": "widget",
+          "widget": {
+            "widgetType": "showcase",
+            "widgetData": []
+          }
+        }
+      ]
+    }
+  ]
+}
