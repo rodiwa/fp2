@@ -6,15 +6,15 @@ import { connect } from 'react-redux';
 import { initDBAction } from './actions'
 
 // test data only
-import database from './data/database.json'
+// import database from './data/database.json'
 
 // the view
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentUid: {  },
-      database: database,
+      currentUid: null,
+      database: null,
       dbError: false
     }
   }
@@ -26,7 +26,6 @@ class App extends React.Component {
 
     this.initialiseSignIn()
     this.handleAuthStateChange()
-    this.updateDbToStore()
   }
 
   initialiseSignIn() {
@@ -46,15 +45,18 @@ class App extends React.Component {
       if (user && user.uid !== currentUid) {
        this.handleUpdateCurrentUser(this.createUser(user))
        this.getDataFromFbRealtimeDB(user.uid)
-      } else {  
+      } else {
        currentUid = null;
        this.handleUpdateCurrentUser()
+       this.updateDbToStore()
        console.log("no user signed in");
       }  
      });
   }
 
-  updateDbToStore() {
+  updateDbToStore(database = {}) {
+    console.log('updateDbToStore')
+    console.log(database)
     this.props.initDBAction(database)
   }
 
@@ -62,9 +64,10 @@ class App extends React.Component {
     const db = this.firebase.database()
     return db.ref(`/data/`).once('value')
       .then((snapshot) => {
-        console.log(snapshot.val())
+        const database = snapshot.val();
+        this.updateDbToStore(database)
         this.setState({
-          database: snapshot.val()
+          database
         })
     })
   }
