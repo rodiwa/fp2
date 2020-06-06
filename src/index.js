@@ -4,9 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// redux
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import reducers from './reducers';
+import logger from 'redux-logger';
+
+const store = createStore(
+  reducers,
+  applyMiddleware(logger)
+)
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider  store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

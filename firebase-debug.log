@@ -111,3 +111,7 @@
 [debug] [2020-06-06T11:18:50.968Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: build
 [info] +  hosting: Local server: http://localhost:4000
+[warn] !  hosting: Could not load Firebase SDK firebase-app.js v7.14.6, check your internet connection.
+[debug] [2020-06-06T13:53:42.758Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
+[warn] !  hosting: Could not load Firebase SDK firebase-auth.js v7.14.6, check your internet connection.
+[debug] [2020-06-06T13:53:42.760Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443

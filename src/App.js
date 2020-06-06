@@ -1,17 +1,20 @@
 import React from 'react';
 import './App.css';
-
 import FormThingie from './components/FormThingie'
 
-// test data only
-// import database from './data/database.json'
+import { connect } from 'react-redux';
+import { initDBAction } from './actions'
 
+// test data only
+import database from './data/database.json'
+
+// the view
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentUid: null,
-      database: null,
+      currentUid: {  },
+      database: database,
       dbError: false
     }
   }
@@ -23,6 +26,7 @@ class App extends React.Component {
 
     this.initialiseSignIn()
     this.handleAuthStateChange()
+    this.updateDbToStore()
   }
 
   initialiseSignIn() {
@@ -48,6 +52,10 @@ class App extends React.Component {
        console.log("no user signed in");
       }  
      });
+  }
+
+  updateDbToStore() {
+    this.props.initDBAction(database)
   }
 
   getDataFromFbRealtimeDB(uid) {
@@ -103,4 +111,18 @@ class App extends React.Component {
   }
 }
 
-export default App;
+// the container
+
+const mapStateToProps = (state) => {
+  return {
+    database: state.database
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    initDBAction: (database) => { dispatch(initDBAction(database)) }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
