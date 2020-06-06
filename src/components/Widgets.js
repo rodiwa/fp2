@@ -31,7 +31,6 @@ const renderWidgetType = (field) => {
 
 const Widget = (props) => {
   const { field } = props
-  console.log(field.widget && field.widget.widgetType)
 
   if (!(field.widget && field.widget.widgetType)) {
     console.error('Widget not configured properly')

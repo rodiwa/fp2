@@ -5,7 +5,7 @@ const Title = (props) => {
   return (
     <div className="title">
       <label>Title</label>
-      <input type="text" value={field.value} />
+      <input type="text" value={field.value} onChange={() => {}}/>
     </div>
   )
 }

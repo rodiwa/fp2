@@ -1,17 +1,17 @@
 import React from 'react';
 
 const renderWidgetData = (widgetData) => {
-  return widgetData.map(data => {
+  return widgetData.map((data, idx) => {
     return (
-      <div>
+      <div key={idx}>
         <label>Image</label>
-        <input type="text" value={data.img} />
+        <input type="text" value={data.img} onChange={() => {}} />
 
         <label>Title</label>
-        <input type="text" value={data.title} />
+        <input type="text" value={data.title} onChange={() => {}} />
 
         <label>Text</label>
-        <input type="text" value={data.text} />
+        <input type="text" value={data.text} onChange={() => {}} />
       </div>
     )
   })

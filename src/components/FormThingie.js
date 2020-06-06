@@ -13,9 +13,9 @@ export default class FormThingie extends React.Component {
   renderSections() {
     const { database } = this.props
 
-    return database.sections.map((section) => {
+    return database.sections.map((section, idx) => {
       return (
-        <div className="sections">
+        <div className="sections" key={idx}>
           Section
           { this.renderFields(section.fields) }
         </div>
@@ -24,21 +24,21 @@ export default class FormThingie extends React.Component {
   }
 
   renderFields(fields) {
-    return fields.map(field => {
-      return this.renderField(field)
+    return fields.map((field, idx) => {
+      return this.renderField(field, idx)
     })
   }
 
-  renderField(field) {
+  renderField(field, idx) {
     const { TITLE, TEXT, WIDGET } = FIELD_TYPES
 
     switch(field.type) {
       case TITLE:
-        return <Title field={field}/>;
+        return <Title field={field} key={idx}/>;
       case TEXT:
-        return <Text field={field}/>;
+        return <Text field={field} key={idx}/>;
       case WIDGET:
-        return <Widgets field={field}/>;
+        return <Widgets field={field} key={idx}/>;
       default:
         return null;        
     }

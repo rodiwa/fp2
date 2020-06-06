@@ -5,7 +5,7 @@ const Title = (props) => {
   return (
     <div className="text">
       <label>Text</label>
-      <textarea rows="3" type="text" value={field.value} />
+      <textarea rows="3" type="text" value={field.value} onChange={() => {}}/>
     </div>
   )
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 
 const renderWidgetData = (widgetData) => {
-  return widgetData.map(data => {
+  return widgetData.map((data, idx) => {
     return (
-      <div>
+      <div key={idx}>
         <label>Word</label>
-        <input type="text" value={data.title} />
+        <input type="text" value={data.title} onChange={() => {}} />
 
         <label>Priority</label>
-        <input type="number" value={data.size} />
+        <input type="number" value={data.size} onChange={() => {}} />
       </div>
     )
   })

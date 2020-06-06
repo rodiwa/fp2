@@ -1,26 +1,26 @@
 import React from 'react';
 
 const renderItems = (items) => {
-  return items.map(item => {
+  return items.map((item, idx) => {
     return (
-      <div>
+      <div key={idx}>
         <label>Item Text</label>
-        <input type="text" value={item.text} />
+        <input type="text" value={item.text} onChange={() => {}}/>
       </div>
     )
   })
 }
 
 const renderWidgetData = (widgetData) => {
-  return widgetData.map(data => {
+  return widgetData.map((data, idx) => {
     const { meta, items } = data
     return (
-      <div className="timeline-data">
+      <div className="timeline-data" key={idx}>
         <div>
           <label>Meta</label>
-          <input type="text" value={meta.year} />
-          <input type="text" value={meta.group} />
-          <input type="text" value={meta.future} />
+          <input type="text" value={meta.year} onChange={() => {}}/>
+          <input type="text" value={meta.group} onChange={() => {}}/>
+          <input type="text" value={meta.future} onChange={() => {}}/>
         </div>
 
         <div>
