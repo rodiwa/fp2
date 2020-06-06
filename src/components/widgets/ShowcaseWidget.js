@@ -54,7 +54,6 @@ const renderWidgetData = (widgetData) => {
 
 const ShowcaseWidget = (props) => {
   const { widgetData } = props
-  console.log(widgetData)
   return (
     <div className="showcase-widget">
       <label>Showcase Widget</label>

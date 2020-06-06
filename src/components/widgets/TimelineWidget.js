@@ -34,7 +34,6 @@ const renderWidgetData = (widgetData) => {
 
 const TimelineWidget = (props) => {
   const { widgetData } = props
-  console.log(widgetData)
   return (
     <div className="timeline-widget">
       <label>Timeline Widget</label>

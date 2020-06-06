@@ -11,7 +11,6 @@ class App extends React.Component {
     super(props)
     this.state = {
       currentUid: null,
-      isLoaded: null,
       database: null,
       dbError: false
     }
@@ -43,7 +42,6 @@ class App extends React.Component {
       if (user && user.uid !== currentUid) {
        this.handleUpdateCurrentUser(this.createUser(user))
        this.getDataFromFbRealtimeDB(user.uid)
-       this.setIsLoaded(true)
       } else {  
        currentUid = null;
        this.handleUpdateCurrentUser()
@@ -63,12 +61,6 @@ class App extends React.Component {
     })
   }
 
-  setIsLoaded(isLoaded = false) {
-    this.setState({
-      isLoaded
-    })
-  }
-
   createUser(user) {
     return {
       displayName: user.displayName,
@@ -85,7 +77,6 @@ class App extends React.Component {
       this.setState({
         currentUid: null,
         database: null,
-        isLoaded: null
       })
       this.initialiseSignIn()
     }).catch(function(error) {
@@ -95,7 +86,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { currentUid, isLoaded, database } = this.state
+    const { currentUid, database } = this.state
     return (
       <div className="App">
         <header className="app-header">

@@ -19,7 +19,6 @@ const renderWidgetData = (widgetData) => {
 
 const CardsWidget = (props) => {
   const { widgetData } = props
-  console.log(widgetData)
   return (
     <div className="cards-widget">
       <label>Cards Widget</label>

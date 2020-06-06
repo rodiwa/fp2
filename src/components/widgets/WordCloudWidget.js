@@ -16,7 +16,6 @@ const renderWidgetData = (widgetData) => {
 
 const WordCloudWidget = (props) => {
   const { widgetData } = props
-  console.log(widgetData)
   return (
     <div className="word-cloud-widget">
       <label>Word Cloud Widget</label>
